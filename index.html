@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashiq Hussain Memorial Welfare Society</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter & Urdu -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-arabic {
+            font-family: 'Noto Nastaliq Urdu', serif;
+        }
+
+        .btn-premium {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-premium:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 30px -5px rgba(79, 70, 229, 0.6);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="text-indigo-700 text-3xl"><i class="fas fa-shield-alt"></i></div>
+                    <div>
+                        <h1 class="text-xl font-bold text-indigo-900 leading-tight">ASHIQ HUSSAIN MEMORIAL<br><span
+                                class="text-indigo-600">WELFARE SOCIETY (REGD.)</span></h1>
+                        <p class="text-xs text-slate-500 font-arabic">سوسائٹی برائے فلاح و بہبود</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8 font-medium">
+                    <a href="index.html" class="text-indigo-700 border-b-2 border-indigo-700 pb-1">Home</a>
+                    <a href="about.html" class="text-slate-600 hover:text-indigo-700 transition">About</a>
+                    <a href="services.html" class="text-slate-600 hover:text-indigo-700 transition">Services</a>
+                    <a href="gallery.html" class="text-slate-600 hover:text-indigo-700 transition">Gallery</a>
+                    <a href="contact.html" class="text-slate-600 hover:text-indigo-700 transition">Contact</a>
+                    <a href="donate.html" class="btn-premium text-white px-5 py-2 rounded-full text-sm">Donate</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-indigo-700 text-2xl"><i
+                        class="fas fa-bars"></i></button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-indigo-700 font-medium">Home</a>
+                <a href="about.html" class="block py-2 text-slate-600 hover:text-indigo-700">About</a>
+                <a href="services.html" class="block py-2 text-slate-600 hover:text-indigo-700">Services</a>
+                <a href="gallery.html" class="block py-2 text-slate-600 hover:text-indigo-700">Gallery</a>
+                <a href="contact.html" class="block py-2 text-slate-600 hover:text-indigo-700">Contact</a>
+                <a href="donate.html" class="block py-2 text-indigo-700 font-semibold">Donate</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-indigo-900 via-indigo-800 to-purple-900 text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black/30 mix-blend-multiply"></div>
+        <div class="container mx-auto px-4 py-20 md:py-28 lg:py-36 relative z-10">
+            <div data-aos="fade-up">
+                <h2 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">ASHIQ HUSSAIN MEMORIAL</h2>
+                <h3 class="text-2xl md:text-4xl font-semibold text-amber-300 mb-6">WELFARE SOCIETY (REGD.)</h3>
+                <p class="text-3xl md:text-5xl font-arabic mb-8">اپنی زکوۃ ، عطیات ، صدقات ، فطرہ اور دیگر عطیات سے تعاون کریں</p>
+                <p class="text-lg md:text-xl max-w-2xl mb-10">Serving humanity since 2010 with food, education, medical
+                    aid, and marriage assistance.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="donate.html"
+                        class="btn-premium text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transition">Donate
+                        Now</a>
+                    <a href="volunteer.html"
+                        class="bg-white/20 backdrop-blur-sm text-white border border-white/30 px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/30 transition">Become
+                        a Volunteer</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+                    fill="#f8fafc" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-16 bg-white stats-section">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="stat-item" data-target="150">
+                    <div class="text-4xl md:text-5xl font-bold text-indigo-700 counter">0</div>
+                    <div class="text-sm uppercase tracking-wider text-slate-500">Daily Meals</div>
+                    <div class="text-xs text-slate-400 font-arabic">روزانہ کھانے</div>
+                </div>
+                <div class="stat-item" data-target="800">
+                    <div class="text-4xl md:text-5xl font-bold text-indigo-700 counter">0</div>
+                    <div class="text-sm uppercase tracking-wider text-slate-500">Monthly Families</div>
+                    <div class="text-xs text-slate-400 font-arabic">ماہانہ خاندان</div>
+                </div>
+                <div class="stat-item" data-target="18000">
+                    <div class="text-4xl md:text-5xl font-bold text-indigo-700 counter">0</div>
+                    <div class="text-sm uppercase tracking-wider text-slate-500">Yearly Beneficiaries</div>
+                    <div class="text-xs text-slate-400 font-arabic">سالانہ مستفید</div>
+                </div>
+                <div class="stat-item" data-target="20000">
+                    <div class="text-4xl md:text-5xl font-bold text-indigo-700 counter">0</div>
+                    <div class="text-sm uppercase tracking-wider text-slate-500">Total Meals Served</div>
+                    <div class="text-xs text-slate-400 font-arabic">کل کھانے پیش کیے گئے</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Cards -->
+    <section class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-indigo-900">Contact & Donation Info</h2>
+                <p class="text-slate-500 mt-2 font-arabic">رابطہ اور عطیات کی معلومات</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Basharat Ali -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="text-indigo-600 text-5xl mb-4"><i class="fas fa-user-tie"></i></div>
+                    <h3 class="text-2xl font-bold text-indigo-900">BASHARAT ALI</h3>
+                    <p class="text-indigo-500 mb-3">(Incharge)</p>
+                    <p class="text-lg font-medium"><i class="fas fa-phone-alt mr-2 text-indigo-600"></i> 0313-2476138
+                    </p>
+                    <p class="text-slate-500 mt-4 font-arabic">انچارج</p>
+                </div>
+                <!-- Madam Feroza Banu -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="text-indigo-600 text-5xl mb-4"><i class="fas fa-female"></i></div>
+                    <h3 class="text-2xl font-bold text-indigo-900">MADAM FEROZA BANU</h3>
+                    <p class="text-lg"><i class="fas fa-phone-alt mr-2 text-indigo-600"></i> 0326-2172736</p>
+                    <p class="text-lg"><i class="fas fa-phone-alt mr-2 text-indigo-600"></i> 0315-2980783</p>
+                    <div
+                        class="mt-4 bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold inline-block">
+                        <i class="fas fa-money-bill-wave mr-1"></i> Jazz Cash: 0326-2172736
+                    </div>
+                </div>
+                <!-- Additional Contacts -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="text-indigo-600 text-5xl mb-4"><i class="fas fa-phone-alt"></i></div>
+                    <h3 class="text-2xl font-bold text-indigo-900">Additional Contacts</h3>
+                    <p class="text-lg">03026-2172736</p>
+                    <p class="text-lg">03033-2218757</p>
+                    <p class="text-lg">03133-2476138</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-indigo-900">Our Services</h2>
+                <p class="text-slate-500 mt-2 font-arabic">ہماری خدمات</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group bg-slate-50 rounded-2xl p-8 hover:bg-indigo-50 transition" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="text-indigo-600 text-4xl mb-4 group-hover:scale-110 transition"><i
+                            class="fas fa-utensils"></i></div>
+                    <h3 class="text-xl font-bold text-indigo-900 mb-2">Daily Dastarkhwan</h3>
+                    <p class="text-slate-600 mb-4">Nutritious meals every day for the needy.</p>
+                    <a href="services.html"
+                        class="text-indigo-600 font-semibold inline-flex items-center group-hover:underline">Read More
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                </div>
+                <div class="group bg-slate-50 rounded-2xl p-8 hover:bg-indigo-50 transition" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="text-indigo-600 text-4xl mb-4 group-hover:scale-110 transition"><i
+                            class="fas fa-hand-holding-heart"></i></div>
+                    <h3 class="text-xl font-bold text-indigo-900 mb-2">Marriage Assistance</h3>
+                    <p class="text-slate-600 mb-4">Financial help for dignified weddings.</p>
+                    <a href="services.html"
+                        class="text-indigo-600 font-semibold inline-flex items-center group-hover:underline">Read More
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                </div>
+                <div class="group bg-slate-50 rounded-2xl p-8 hover:bg-indigo-50 transition" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="text-indigo-600 text-4xl mb-4 group-hover:scale-110 transition"><i
+                            class="fas fa-graduation-cap"></i></div>
+                    <h3 class="text-xl font-bold text-indigo-900 mb-2">Education Support</h3>
+                    <p class="text-slate-600 mb-4">School fees, books, and uniforms for children.</p>
+                    <a href="services.html"
+                        class="text-indigo-600 font-semibold inline-flex items-center group-hover:underline">Read More
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                </div>
+                <div class="group bg-slate-50 rounded-2xl p-8 hover:bg-indigo-50 transition" data-aos="fade-up"
+                    data-aos-delay="400">
+                    <div class="text-indigo-600 text-4xl mb-4 group-hover:scale-110 transition"><i
+                            class="fas fa-heartbeat"></i></div>
+                    <h3 class="text-xl font-bold text-indigo-900 mb-2">Medical Aid</h3>
+                    <p class="text-slate-600 mb-4">Free medical camps and medicine support.</p>
+                    <a href="services.html"
+                        class="text-indigo-600 font-semibold inline-flex items-center group-hover:underline">Read More
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Teaser -->
+    <section class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-indigo-900">Moments of Service</h2>
+                <p class="text-slate-500 mt-2 font-arabic">خدمت کے لمحات</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="rounded-2xl overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="assets/images/gallery/img1.png.jpeg" alt="Food distribution"
+                        class="w-full h-48 object-cover hover:scale-110 transition duration-500"
+                        onerror="this.src='https://via.placeholder.com/600x400/1e3a8a/ffffff?text=Food'">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="assets/images/gallery/img2.png.jpeg" alt="Marriage assistance"
+                        class="w-full h-48 object-cover hover:scale-110 transition duration-500"
+                        onerror="this.src='https://via.placeholder.com/600x400/4f46e5/ffffff?text=Marriage'">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="assets/images/gallery/img3.png.jpeg" alt="Education"
+                        class="w-full h-48 object-cover hover:scale-110 transition duration-500"
+                        onerror="this.src='https://via.placeholder.com/600x400/7c3aed/ffffff?text=Education'">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="assets/images/gallery/img4.png.jpeg" alt="Medical camp"
+                        class="w-full h-48 object-cover hover:scale-110 transition duration-500"
+                        onerror="this.src='https://via.placeholder.com/600x400/9333ea/ffffff?text=Medical'">
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="gallery.html"
+                    class="inline-flex items-center text-indigo-700 font-semibold text-lg hover:underline">View Full
+                    Gallery <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-indigo-900">Support Us</h2>
+                <p class="text-slate-500 mt-2 font-arabic">اپنا تعاون دیں</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- JazzCash -->
+                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition border border-indigo-100"
+                    data-aos="flip-left" data-aos-delay="100">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <div class="text-indigo-700 text-5xl mb-4"><i class="fas fa-mobile-alt"></i></div>
+                            <h3 class="text-2xl font-bold text-indigo-900">JazzCash</h3>
+                            <p class="text-slate-500 text-sm mt-1">Send donations directly</p>
+                        </div>
+                        <span
+                            class="bg-amber-400 text-amber-900 text-xs font-bold px-3 py-1 rounded-full">Popular</span>
+                    </div>
+                    <div class="mt-6 bg-white p-4 rounded-xl flex justify-between items-center">
+                        <span class="text-lg font-mono font-bold text-indigo-800">0326-2172736</span>
+                        <button onclick="copyToClipboard('0326-2172736')"
+                            class="text-indigo-600 hover:text-indigo-800 text-xl"><i class="far fa-copy"></i></button>
+                    </div>
+                    <div class="mt-3 bg-white p-4 rounded-xl flex justify-between items-center">
+                        <span class="text-lg font-mono font-bold text-indigo-800">0315-2980783</span>
+                        <button onclick="copyToClipboard('0315-2980783')"
+                            class="text-indigo-600 hover:text-indigo-800 text-xl"><i class="far fa-copy"></i></button>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-4">* Zakat eligible</p>
+                </div>
+                <!-- EasyPaisa -->
+                <div class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition border border-emerald-100"
+                    data-aos="flip-left" data-aos-delay="200">
+                    <div class="text-emerald-700 text-5xl mb-4"><i class="fas fa-wallet"></i></div>
+                    <h3 class="text-2xl font-bold text-emerald-900">EasyPaisa</h3>
+                    <p class="text-slate-500 text-sm mt-1">Quick & secure</p>
+                    <div class="mt-6 bg-white p-4 rounded-xl flex justify-between items-center">
+                        <span class="text-lg font-mono font-bold text-emerald-800">0326-2172736</span>
+                        <button onclick="copyToClipboard('0326-2172736')"
+                            class="text-emerald-600 hover:text-emerald-800 text-xl"><i class="far fa-copy"></i></button>
+                    </div>
+                    <div class="mt-3 bg-white p-4 rounded-xl flex justify-between items-center">
+                        <span class="text-lg font-mono font-bold text-emerald-800">0315-2980783</span>
+                        <button onclick="copyToClipboard('0315-2980783')"
+                            class="text-emerald-600 hover:text-emerald-800 text-xl"><i class="far fa-copy"></i></button>
+                    </div>
+                </div>
+                <!-- Bank Transfer -->
+                <div class="bg-gradient-to-br from-slate-50 to-gray-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition border border-slate-200"
+                    data-aos="flip-left" data-aos-delay="300">
+                    <div class="text-slate-700 text-5xl mb-4"><i class="fas fa-university"></i></div>
+                    <h3 class="text-2xl font-bold text-slate-900">Bank Transfer</h3>
+                    <p class="text-slate-500 text-sm mt-1">BankIslami</p>
+                    <div class="mt-6 space-y-3">
+                        <div class="bg-white p-3 rounded-lg text-sm"><span class="font-semibold">Account Title:</span>
+                            Feroza bano</div>
+                        <div class="bg-white p-3 rounded-lg text-sm flex justify-between"><span
+                                class="font-semibold">Account #:</span> 5252 0045 0050-03560 <button
+                                onclick="copyToClipboard('5252-0045-0050-03560')"
+                                class="text-slate-500 hover:text-slate-700"><i class="far fa-copy"></i></button></div>
+                        <div class="bg-white p-3 rounded-lg text-sm flex justify-between"><span
+                                class="font-semibold">IBAN:</span> PK34BKIP0115000305460016 <button
+                                onclick="copyToClipboard('PK34BKIP0115000305460016')"
+                                class="text-slate-500 hover:text-slate-700"><i class="far fa-copy"></i></button></div>
+                        <div class="bg-white p-3 rounded-lg text-sm"><span class="font-semibold">Branch:</span>Anda More Sub Branch, Karachi</div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-slate-400 text-sm mt-10">Your contribution helps us serve thousands. JazakAllah
+                Khair.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <h3 class="text-xl font-bold text-indigo-300 mb-4">ASHIQ HUSSAIN MEMORIAL<br>WELFARE SOCIETY (REGD.)
+                    </h3>
+                    <p class="text-slate-400 mb-4">Serving humanity with sincerity since 2010.</p>
+                    <div class="flex space-x-4 text-2xl">
+                        <a href="#" class="text-slate-400 hover:text-indigo-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-indigo-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-indigo-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-indigo-300"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="about.html" class="hover:text-indigo-300">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-indigo-300">Services</a></li>
+                        <li><a href="gallery.html" class="hover:text-indigo-300">Gallery</a></li>
+                        <li><a href="contact.html" class="hover:text-indigo-300">Contact</a></li>
+                        <li><a href="donate.html" class="hover:text-indigo-300">Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><i class="fas fa-map-marker-alt mr-2 text-indigo-400"></i> SC-13, ST-18, Sector 4-A, Surjani
+                            Town, Karachi</li>
+                        <li><i class="fas fa-phone mr-2 text-indigo-400"></i> 0313-2476138</li>
+                        <li><i class="fas fa-phone mr-2 text-indigo-400"></i> 0326-2172736</li>
+                        <li><i class="fas fa-envelope mr-2 text-indigo-400"></i> info@ahmws.org</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">International Supporters</h4>
+                    <p class="text-slate-400">Germany · Japan · Malaysia · Saudi Arabia · Iran · Oman</p>
+                    <p class="text-sm text-indigo-300 mt-4">100% Transparency</p>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-12 pt-8 text-center text-slate-500 text-sm">
+                <p>&copy; 2026 Ashiq Hussain Memorial Welfare Society. All rights reserved. | Designed with <i
+                        class="fas fa-heart text-red-500"></i> for humanity</p>
+                <p class="font-arabic mt-2">آپنے کا کوئی نہ ہو گیا ہے</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+        document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Counter animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+        function animateCounters() {
+            counters.forEach(counter => {
+                const target = +counter.parentElement.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(animateCounters, 10);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        }
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        const statsSection = document.querySelector('.stats-section');
+        if (statsSection) observer.observe(statsSection);
+
+        window.copyToClipboard = (text) => {
+            navigator.clipboard.writeText(text).then(() => alert('Copied: ' + text));
+        };
+    </script>
+</body>
+
+</html>
